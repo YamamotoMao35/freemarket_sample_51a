@@ -1,0 +1,186 @@
+= render 'layouts/header'
+
+.buy-check-page
+  .bread-crumbs
+  %section.item-box-container
+    %h1.item-box-container__name supreme
+    .item-main-content.clearfix
+      .item-photo
+        .item-photo-content
+          .active-item
+            = image_tag 'https://static.mercdn.net/item/detail/orig/photos/m90271577307_1.jpg?1557691334', alt: '', width: '300', height: '300'
+          .item-box
+            .small-item-box
+              = image_tag 'https://static.mercdn.net/item/detail/orig/photos/m90271577307_1.jpg?1557691334', alt: '', width: '60', height: '60'
+            .small-item-box
+              = image_tag 'https://static.mercdn.net/item/detail/orig/photos/m90271577307_1.jpg?1557691334', alt: '', width: '60', height: '60'
+            .small-item-box
+              = image_tag 'https://static.mercdn.net/item/detail/orig/photos/m90271577307_1.jpg?1557691334', alt: '', width: '60', height: '60'
+            .small-item-box
+              = image_tag 'https://static.mercdn.net/item/detail/orig/photos/m90271577307_1.jpg?1557691334', alt: '', width: '60', height: '60'
+      %table.item-detail-table
+        %tbody
+          %tr
+            %th 出品者
+            %td
+              = link_to  'にんじん', '/'
+              %div
+                .item-user-ratings
+                  %i.fas.fa-smile
+                  %span 200
+                .item-user-ratings
+                  %i.fas.fa-meh
+                  %span 20
+                .item-user-ratings
+                  %i.fas.fa-frown-open
+                  %span 2
+          %tr
+            %th カテゴリー
+            %td
+              = link_to 'メンズ', '/'
+          %tr
+            %th ブランド
+            %td
+              = link_to 'シュプリーム', '/'
+          %tr
+            %th 商品のサイズ
+            %td M
+          %tr
+            %th 商品の状態
+            %td 目立った傷や汚れなし
+          %tr
+            %th 配送料の負担
+            %td 着払い（購入者負担）
+          %tr
+            %th 配送の方法
+            %td 未定
+          %tr
+            %th 配送の地域
+            %td 
+              = link_to '大阪', '/'
+          %tr
+            %th 発送日の目安
+            %td ２〜3日で発送
+    .item-price-box
+      %span.item-price-box__price ¥22,000
+      %span.item-price-box__tax （税込）
+      %span.item-price-box__fee 着払い
+      = link_to '購入画面に進む', '/', class: 'item-buy-btn'
+    .item-description
+      %p.item-description__inner
+        シュプリームオンラインにて購入。
+        確実正規品です。
+        レッド
+        Mサイズ
+        状態8/10
+        即完売したブラッシュスクリプトクルーネック。
+        ベースボールシャツやジャケットなどでも使われる人気のスクリプトロゴを、アップリケでしっかりと縫い付けたスウェットになってます。
+        アーチロゴのアップリケより手が込んでいて、これはかなりの力作ですね！
+        Supremeを代表するアイテムの一つでもある、カナダ製のヘビーウェイトコットンボディー。
+        完売品で非常に希少なトレーナーになります。
+        現在メルカリ内でも赤色は売り切れ中です。
+        相場より格安で出品致します。
+    .item-button-container
+      .item-button-left
+        %button.item-button-left__button{type: 'button', name: 'like'}
+          %i.far.fa-heart
+          %span いいね！
+          %span 8
+        = link_to '', class: 'item-button-left__button'  do
+          %i.far.fa-flag
+          %span 不適切な商品の報告
+      .item-button-right
+        = link_to '', class: 'btn' do
+          %i.fas.fa-lock
+          %span あんしん・あんぜんへの取り組み
+  .item-detail-message
+    .message-container
+      .message-content
+        .balloon6
+          .faceicon
+            = image_tag '//www-mercari-jp.akamaized.net/assets/img/common/common/user-icon.svg?2399382397', alt: ''
+          .chatting
+            .says
+              %p aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              .message-icons.clearfix
+                %time.message-icon-left
+                  %i.far.fa-clock
+                  %span 23時間前
+                .message-icon-right
+        .balloon6
+          .faceicon
+            = image_tag '//www-mercari-jp.akamaized.net/assets/img/common/common/user-icon.svg?2399382397', alt: ''
+          .chatting
+            .says
+              %p 左ふきだし文
+              .message-icons.clearfix
+                %time.message-icon-left
+                  %i.far.fa-clock
+                  %span 23時間前
+                .message-icon-right
+        .balloon6
+          .faceicon
+            = image_tag '//www-mercari-jp.akamaized.net/assets/img/common/common/user-icon.svg?2399382397', alt: ''
+          .chatting
+            .says
+              %p 出品者がコメントを削除しました
+              .message-icons.clearfix
+                %time.message-icon-left
+                  %i.far.fa-clock
+                  %span 23時間前
+                .message-icon-right
+        .balloon6
+          .faceicon
+            = image_tag '//www-mercari-jp.akamaized.net/assets/img/common/common/user-icon.svg?2399382397', alt: ''
+          .chatting
+            .says
+              %p 出品者がコメントを削除しました
+              .message-icons.clearfix
+                %time.message-icon-left
+                  %i.far.fa-clock
+                  %span 23時間前
+                .message-icon-right
+        .balloon6
+          .faceicon
+            = image_tag '//www-mercari-jp.akamaized.net/assets/img/common/common/user-icon.svg?2399382397', alt: ''
+          .chatting
+            .says
+              %p 出品者がコメントを削除しました
+              .message-icons.clearfix
+                %time.message-icon-left
+                  %i.far.fa-clock
+                  %span 23時間前
+                .message-icon-right
+      .message-content
+        %form.message-form
+          %input{type: 'hidden', name: '', value: ''}
+          %p 相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
+          %textarea.textarea-default{type: 'text', name: 'body', value: ''}
+          %button.message-submit{type: 'submit'}
+            %span コメントする
+  %ul.item-nav
+    %li.item-nav__prev
+      = link_to '', class: 'nav-button' do
+        %i.fas.fa-angle-left
+        %span Tシャツ
+    %li.item-nav__next
+      = link_to '', class: 'nav-button' do
+        %span アウター
+        %i.fas.fa-angle-right
+  .media-box
+    .media-box__facebook
+      = link_to '',class: 'share-btn', target: '_blank' do
+        %i.fab.fa-facebook-square
+    .media-box__twitter
+      = link_to '',class: 'share-btn', target: '_blank' do
+        %i.fab.fa-twitter-square
+    .media-box__pinterest
+      = link_to '',class: 'share-btn', target: '_blank' do
+        %i.fab.fa-pinterest-square
+  .items-more
+    %section.items-box-container
+      %h2.items-box-container__head
+        = link_to 'にんじんさんのその他の出品', '/'
+      = render 'items/buy-check-page'
+        
+= render 'layouts/footer'
